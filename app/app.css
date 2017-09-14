@@ -1,0 +1,30 @@
+/* app css stylesheet */
+
+.nav-header{
+    background: url(img/header_background.png) no-repeat;
+    background-size: 50% 150px;
+    background-position: 95% 0px;
+    height: 200px;
+}
+.header-title{
+	margin-top:50px;
+}
+p{
+	text-align: center;
+	margin: 0px !important;
+}
+.title{
+	font-weight: 600;
+	font-size: 16px;
+}
+.resume{
+	margin: 0px;
+	padding: 10px;
+	border:1px solid
+}
+.objective, .interest, .address{
+	padding-left: 10px;
+}
+.margin-top10{
+	margin-top:10px;
+}

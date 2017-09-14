@@ -1,0 +1,44 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Number</th>
+            <th>Address</th>
+            <th>Interests</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{item.name}}</td>
+            <td>{{item.email}}</td>
+            <td>+91 {{item.number}}</td>
+            <td>{{item.address}}</td>
+            <td>{{item.interest}}</td>
+        </tr>
+    </tbody>
+</table>
+<div class="row resume">
+    <div class="col-md-12">
+        <p class="title">{{item.name}}</p>
+        <p class="contact">+91 {{item.number}}, {{item.email}}</p>
+        <span class="title">Career objective</span>
+        <br>
+        <span class="objective">To enhance my professional skills in dynamic and stable workplace displaying highest level of learning, contribution, innovation and ethics.</span>
+        <br>
+        <span class="title">Interests</span>
+        <br>
+        <span class="interest">{{item.interest}}</span>
+        <br>
+        <span class="title">Languages known</span>
+        <br>
+        <span class="language">
+			<ul ng-repeat="item in language">
+				<li>{{item}}</li>
+			</ul>
+		</span>
+        <span class="title">Current Address</span>
+        <br>
+        <span class="address">{{item.address}}</span>
+    </div>
+</div>
